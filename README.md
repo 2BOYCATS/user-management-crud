@@ -18,20 +18,20 @@
 
 ## 🚀 วิธีรันโปรเจกต์
 1. เปิดโฟลเดอร์โปรเจกต์ด้วย VS Code
-2. ตั้งตั้ง [Node.js](https://nodejs.org/) หากยังไม่มี
+2. ติดตั้ง [Node.js](https://nodejs.org/) หากยังไม่มี
 3. ติดตั้ง dependencies:
    
    ```bash
    npm install
    ```
-5. เปิด JSON Server (จะรันที่ `http://localhost:3000`)
+4. เปิด JSON Server (จะรันที่ `http://localhost:3000`)
    
    ```bash
    npm run server
    ```
-7. ใช้ Live Server เปิดไฟล์ `index.html`
+5. ใช้ Live Server เปิดไฟล์ `index.html`
 
-## 🔌API Endpoints
+## 🔌 API Endpoints
 Base URL: `http://localhost:3000`
 
 | Method | Endpoint | การทำงาน |
@@ -74,7 +74,7 @@ Base URL: `http://localhost:3000`
 ```
 
 ## 📝 หมายเหตุ
-- ต้องเปิด JSON Server `(npm run server)` ก่อนเปิดหน้าเว็บ ไม่เช่นนั้นตารางจะแสดงเป็นแถวว่าง
+- ต้องเปิด JSON Server (`npm run server`) ก่อนเปิดหน้าเว็บ ไม่เช่นนั้นตารางจะแสดงเป็นแถวว่าง
 - เมื่อเพิ่ม แก้ไข หรือลบผู้ใช้ ข้อมูลจะถูกเขียนลงไฟล์ `users.json` โดยตรง
 
 ## 📚 สิ่งที่ได้เรียนรู้
