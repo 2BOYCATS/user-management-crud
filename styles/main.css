@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef2ff;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid;
+}
+
+.card-header .info {
+    display: flex;
+    gap: 1em;
+}
+
+.card-header .info span {
+    font-size: 2.5em;
+    color: #424874;
+}
+
+.card-header .info .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.count-item {
+    border: 1px solid;
+    border-radius: 999px;
+    padding: 0.3em 0.8em;
+    border: none;
+    outline: none;
+    background: #424874;
+    color: white;
+}
+
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    text-align: left;
+}
+.card-table th {
+    background: #eef2ff;
+    color: #1e293b;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 16px 20px;
+}
+.card-table td {
+    padding: 16px 20px;
+    color: #334155;
+    font-size: 0.8em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.card-table button {
+    background: #424874;
+    padding: 0.4em 0.8em;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+    }
+}
+.card-table button:hover {
+    background: #142D4C;
+}
+
+.addUser {
+    width: 100%;
+    padding: 1em 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formAddUser {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    background: white;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    padding: 3em;
+
+    display: none;
+    z-index: 100;
+}
+.showFormAdd {
+    display: flex;
+}
+.formAddUser strong {
+    text-align: center;
+    font-size: 1em;
+    color: #142D4C;
+}
+.formAddUser input {
+    padding: 0.5em;
+    border-radius: 1em;
+    outline: none;
+    border: 1px solid #142D4C;
+}
+.addUser button {
+    padding: 0.7em 1em;
+    flex-grow: 0.4;
+    border-radius: 99px;
+    outline: none;
+    border: none;
+    background: #424874;
+    color: white;
+}
+.addUser button:hover {
+    background: #142D4C;
+    cursor: pointer;
+}
+
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+}
+.backdropOpen {
+    visibility: visible;
+}

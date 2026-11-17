@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css">
+    <title>User List</title>
+</head>
+<body>
+    <div class="card-wrap">
+        <div class="card">
+            <div class="card-header">
+                <section class="info">
+                    <span class="material-symbols-outlined">
+                        supervised_user_circle
+                    </span>
+                    <div class="text">
+                        <strong>User Management</strong>
+                        <small>Manage your users</small>   
+                    </div>
+                </section>
+                <section class="count">
+                    <div class="count-item" id="count">0 Users</div>
+                </section>
+            </div>
+
+            <table class="card-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+
+            <div class="addUser">
+                <form class="formAddUser" id="formAddUser">
+                    <strong>Add User</strong>
+                    <input type="text" id="firstname" placeholder="First name...">
+                    <input type="text" id="lastname" placeholder="Last name...">
+                    <input type="email" id="email" placeholder="Email...">
+                    <button type="submit">Add</button>
+                </form>
+                <button id="btnAddUser">Add User</button>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef2ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formEditUser {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    background: white;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    padding: 3em;
+
+    position: relative;
+}
+.formEditUser strong {
+    text-align: center;
+    font-size: 1em;
+    color: #142D4C;
+}
+.formEditUser input {
+    padding: 0.5em;
+    border-radius: 1em;
+    outline: none;
+    border: 1px solid #142D4C;
+}
+
+.formEditUser .edit {
+    padding: 0.7em 1em;
+    flex-grow: 0.4;
+    border-radius: 99px;
+    outline: none;
+    border: none;
+    background: #424874;
+    color: white;
+}
+.formEditUser .edit:hover {
+    background: #142D4C;
+    cursor: pointer;
+}
+
+.formEditUser .exit {
+    position: absolute;
+    top: 0;
+    right: 0; 
+
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border: none;
+    outline: none;
+
+    padding: 0.5em 1em;
+    font-weight: bold;
+    color: #6C567B;
+    background: #F8C4B4;
+}
+.formEditUser .exit:hover{
+    transition: transform 0.5s ease;
+    background: #D45079;
+    color: white;
+    cursor: pointer;
+}
